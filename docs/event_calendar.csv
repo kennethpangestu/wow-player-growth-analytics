@@ -1,0 +1,9 @@
+start,end,event,kind,source
+2006-01-29,2006-02-04,Lunar New Year,holiday,public calendar
+2006-11-03,2006-11-05,"718 avatars first seen on Nov 3 (9x a normal day), 85% already above level 10: likely character transfers onto the realm",anomaly,data: reports/tables/dq_new_avatar_waves.csv
+2007-02-18,2007-02-24,Lunar New Year,holiday,public calendar
+2007-04-03,2007-04-03,"The Burning Crusade goes live (first avatar above level 60, first Blood Elf and first Paladin)",launch,data: first day max_level > 60
+2008-02-07,2008-02-13,Lunar New Year,holiday,public calendar
+2008-10-07,2008-10-14,"1,480 avatars first seen on Oct 8 (20x a normal day), 89% never past level 1, mostly Troll and Orc Warriors: likely throwaway or spam accounts",anomaly,data: reports/tables/dq_new_avatar_waves.csv
+2008-11-07,2009-01-10,Collector slows from 10-minute to about 15-minute sweeps,collection,data: coverage.slow_sampling
+2008-11-19,2008-11-19,"Wrath of the Lich King goes live (first avatar above level 70, first Death Knight)",launch,data: first day max_level > 70
