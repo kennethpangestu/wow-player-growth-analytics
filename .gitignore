@@ -1,0 +1,15 @@
+# The dataset is never committed (download it with `make data`)
+data/
+
+# The teammate's warehouse build
+warehouse/*.duckdb
+warehouse/*.duckdb.wal
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+*.twbr

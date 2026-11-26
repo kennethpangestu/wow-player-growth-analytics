@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint
+        run: make lint
+
+      - name: Unit tests
+        run: make test
+
+      - name: README, memo and experiment plan match the metrics
+        run: python scripts/render_docs.py --check
+
+      - name: Run the whole pipeline on synthetic data
+        run: make fixture-run
+
+      - name: Upload fixture reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixture-reports-py${{ matrix.python-version }}
+          path: data/fixture_reports/
