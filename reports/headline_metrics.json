@@ -1,0 +1,389 @@
+{
+  "data_quality": {
+    "raw_rows": 36513647,
+    "raw_avatars": 91064,
+    "rows_after_dedupe": 36504188,
+    "garbled_attribute_rows": 40806,
+    "avatar_sweep_rows": 36330600,
+    "first_blood_elf": "2007-04-03",
+    "first_paladin": "2007-04-03",
+    "first_death_knight": "2008-11-19",
+    "first_above_level_60": "2007-04-03",
+    "first_above_level_70": "2008-11-19",
+    "sessions_no_missed_sweeps": 3505295,
+    "sessions_six_missed_sweeps": 2745743,
+    "reused_ids_level_drop": 1041,
+    "reused_ids_two_characters": 465,
+    "reused_ids": 1134,
+    "sweeps": 137654,
+    "days": 1107,
+    "days_without_data": 24,
+    "sessions": 3162915,
+    "player_days": 1979295,
+    "paper": {
+      "avatars": 91065,
+      "sessions": 667032,
+      "expected_snapshots": 159408,
+      "missing_snapshots": 21324,
+      "days": 1107
+    },
+    "avatars_vs_paper": -1,
+    "sweeps_vs_paper_collected": -430,
+    "sessions_one_missed_sweep_allowed": 3162915,
+    "low_coverage_days": 57,
+    "slow_sampling_start": "2008-11-07",
+    "slow_sampling_days": 34,
+    "thinning_dau_ratio": 0.937126,
+    "thinning_days": 60,
+    "launch_dates": {
+      "tbc": "2007-04-03",
+      "wotlk": "2008-11-19"
+    },
+    "waves": [
+      {
+        "first_day": "2008-10-08",
+        "new": 1480,
+        "share_above_level_10": 0.0,
+        "share_never_above_level_1": 0.885135,
+        "ratio_to_typical": 19.733333
+      },
+      {
+        "first_day": "2006-11-03",
+        "new": 718,
+        "share_above_level_10": 0.85376,
+        "share_never_above_level_1": 0.048747,
+        "ratio_to_typical": 8.975
+      },
+      {
+        "first_day": "2006-01-01",
+        "new": 1242,
+        "share_above_level_10": 0.770531,
+        "share_never_above_level_1": 0.052335,
+        "ratio_to_typical": 8.012903
+      }
+    ]
+  },
+  "q1": {
+    "avg_dau": 1878.935642,
+    "peak_dau": 3273.0,
+    "peak_dau_date": "2007-04-04",
+    "avg_mau": 7569.074844,
+    "avg_stickiness": 0.252874,
+    "avg_minutes_per_dau": 186.39439,
+    "months": 33,
+    "first_month": "2006-04",
+    "last_month": "2008-12",
+    "share_gross_adds_new": 0.685468,
+    "share_gross_adds_resurrected": 0.314532,
+    "avg_resurrected_per_month": 1104.787879,
+    "avg_new_per_month": 2407.69697,
+    "avg_churned_per_month": 3441.848485,
+    "months_quick_ratio_above_1": 11,
+    "median_quick_ratio": 0.941433,
+    "mau_change_variance_share": {
+      "new": 0.517425,
+      "resurrected": 0.061423,
+      "churned": 0.421152
+    },
+    "mau_change_variance_share_without_anomaly_months": {
+      "new": 0.440939,
+      "resurrected": 0.068702,
+      "churned": 0.490358
+    },
+    "new_avatar_cohort": 60987,
+    "retention": {
+      "d1": 0.27883,
+      "d7": 0.213095,
+      "d30": 0.179891,
+      "d90": 0.116435
+    },
+    "top_quick_ratio_months": [
+      {
+        "month": "2007-04",
+        "quick_ratio": 3.485667,
+        "new": 8619,
+        "resurrected": 1838,
+        "churned": 3000
+      },
+      {
+        "month": "2008-10",
+        "quick_ratio": 3.133128,
+        "new": 6344,
+        "resurrected": 1799,
+        "churned": 2599
+      },
+      {
+        "month": "2006-11",
+        "quick_ratio": 3.114673,
+        "new": 4507,
+        "resurrected": 545,
+        "churned": 1622
+      }
+    ]
+  },
+  "q2": {
+    "placebo_n": 36,
+    "placebo_sd": 0.046162,
+    "placebo_max_abs": 0.101319,
+    "tbc": {
+      "launch_date": "2007-04-03",
+      "lift_with_anomaly_days_in_fit": 0.441105,
+      "ci_with_anomaly_days_in_fit": [
+        0.372232,
+        0.523113
+      ],
+      "post_days": 56,
+      "lift": 0.441105,
+      "ci": [
+        0.3809,
+        0.524025
+      ],
+      "actual_dau": 2478.28,
+      "counterfactual_dau": 1719.70794,
+      "extra_player_days": 37928.60302,
+      "week1_lift": 0.789562,
+      "last_full_week_lift": 0.240123,
+      "sensitivity_min": 0.373866,
+      "sensitivity_max": 0.496721,
+      "yoy": {
+        "lift": 0.531851,
+        "launch_ratio": 1.441629,
+        "compare_ratios": {
+          "2006": 1.000133,
+          "2008": 0.882072
+        }
+      },
+      "placebo_share_as_large": 0.0,
+      "entrants": 11116,
+      "share_new": 0.562073,
+      "share_reactivated": 0.109032,
+      "share_already_active": 0.328895,
+      "still_active_reactivated": 0.328383,
+      "still_active_already_active": 0.681346,
+      "still_active_new": 0.173816,
+      "baseline_still_active_reactivated": 0.339024,
+      "baseline_still_active_new": 0.191466,
+      "player_days_by_segment": {
+        "already active": 64837,
+        "joined after week 2": 23379,
+        "new": 32951,
+        "reactivated": 7841
+      }
+    },
+    "wotlk": {
+      "launch_date": "2008-11-19",
+      "lift_with_anomaly_days_in_fit": 0.079182,
+      "ci_with_anomaly_days_in_fit": [
+        -0.040533,
+        0.193899
+      ],
+      "post_days": 53,
+      "lift": 0.11839,
+      "ci": [
+        0.060481,
+        0.190162
+      ],
+      "actual_dau": 1968.577681,
+      "counterfactual_dau": 1760.189151,
+      "extra_player_days": 10002.649427,
+      "week1_lift": 0.137304,
+      "last_full_week_lift": 0.174345,
+      "sensitivity_min": 0.099502,
+      "sensitivity_max": 0.132611,
+      "yoy": {
+        "lift": 0.09651,
+        "launch_ratio": 1.092311,
+        "compare_ratios": {
+          "2007": 0.99617
+        }
+      },
+      "placebo_share_as_large": 0.0,
+      "entrants": 6607,
+      "share_new": 0.373695,
+      "share_reactivated": 0.147873,
+      "share_already_active": 0.478432,
+      "still_active_reactivated": 0.299898,
+      "still_active_already_active": 0.685543,
+      "still_active_new": 0.26772,
+      "baseline_still_active_reactivated": 0.349922,
+      "baseline_still_active_new": 0.133627,
+      "player_days_by_segment": {
+        "already active": 54782,
+        "joined after week 2": 17605,
+        "new": 20127,
+        "reactivated": 6376
+      }
+    }
+  },
+  "q3": {
+    "cohort": 60987,
+    "cohort_first_day_range": [
+      "2006-04-01",
+      "2008-09-12"
+    ],
+    "d90_retention": 0.116435,
+    "aha_feature": "active_days_w1",
+    "aha_threshold": 2.0,
+    "aha_share": 0.387476,
+    "aha_retention_at_or_above": 0.224282,
+    "aha_retention_below": 0.048212,
+    "aha_lift": 4.652008,
+    "aha_youden_j": 0.406193,
+    "aha_table": [
+      {
+        "feature": "active_days_w1",
+        "threshold": 2.0,
+        "share_at_or_above": 0.387476,
+        "retention_at_or_above": 0.224282,
+        "retention_below": 0.048212,
+        "youden_j": 0.406193,
+        "lift": 4.652008
+      },
+      {
+        "feature": "sessions_w1",
+        "threshold": 3.0,
+        "share_at_or_above": 0.289176,
+        "retention_at_or_above": 0.25567,
+        "retention_below": 0.059791,
+        "youden_j": 0.391374,
+        "lift": 4.276065
+      },
+      {
+        "feature": "max_level_w1",
+        "threshold": 6.0,
+        "share_at_or_above": 0.357371,
+        "retention_at_or_above": 0.216426,
+        "retention_below": 0.060829,
+        "youden_j": 0.347344,
+        "lift": 3.557953
+      },
+      {
+        "feature": "hours_w1",
+        "threshold": 2.679167,
+        "share_at_or_above": 0.260006,
+        "retention_at_or_above": 0.250047,
+        "retention_below": 0.069488,
+        "youden_j": 0.337684,
+        "lift": 3.598417
+      },
+      {
+        "feature": "levels_gained_w1",
+        "threshold": 6.0,
+        "share_at_or_above": 0.258957,
+        "retention_at_or_above": 0.248275,
+        "retention_below": 0.070363,
+        "youden_j": 0.331859,
+        "lift": 3.528465
+      }
+    ],
+    "guild_in_week1_share": 0.080525,
+    "guild": {
+      "n": 9866,
+      "n_treated": 1007,
+      "trimmed": 3,
+      "naive_treated": 0.450844,
+      "naive_control": 0.322384,
+      "naive_rd": 0.12846,
+      "selection_share_of_naive_gap": 0.321077,
+      "ipw_treated": 0.450844,
+      "ipw_control": 0.36363,
+      "ipw_rd": 0.087214,
+      "ipw_rd_ci": [
+        0.055593,
+        0.120071
+      ],
+      "ipw_rr": 1.239844,
+      "ipw_rr_ci": [
+        1.151578,
+        1.337426
+      ],
+      "match_treated": 0.451741,
+      "match_control": 0.369154,
+      "match_rd": 0.082587,
+      "matched_share": 0.998014,
+      "e_value": 1.78516,
+      "e_value_ci": 1.569375,
+      "control_effective_n": 5054.720577,
+      "controls": 8859,
+      "max_control_weight_share": 0.000844,
+      "max_abs_smd_before": 0.680526,
+      "max_abs_smd_after": 0.012205
+    }
+  },
+  "q6": {
+    "reference_dates": 23,
+    "population_rows": 41436,
+    "at_risk_per_snapshot": 1801.565217,
+    "y_mean": 1.627039,
+    "y_sd": 3.934104,
+    "y_share_zero": 0.667849,
+    "corr_pre_days": 0.657809,
+    "cuped_variance_reduction_one_covariate": 0.432713,
+    "cuped_variance_reduction": 0.434916,
+    "sample_size_cut": 0.434911,
+    "power_table": [
+      {
+        "relative_lift": 0.05,
+        "absolute_lift_days": 0.081352,
+        "n_per_arm_raw": 36711,
+        "n_per_arm_cuped": 20745,
+        "four_week_cohorts_needed_cuped": 23.029974
+      },
+      {
+        "relative_lift": 0.1,
+        "absolute_lift_days": 0.162704,
+        "n_per_arm_raw": 9178,
+        "n_per_arm_cuped": 5187,
+        "four_week_cohorts_needed_cuped": 5.758326
+      },
+      {
+        "relative_lift": 0.2,
+        "absolute_lift_days": 0.325408,
+        "n_per_arm_raw": 2295,
+        "n_per_arm_cuped": 1297,
+        "four_week_cohorts_needed_cuped": 1.439859
+      }
+    ],
+    "sim_n_per_arm": 5000,
+    "aa_sims": 4000,
+    "injection_sims": 1000,
+    "peeking_sims": 2000,
+    "sim_effect_days": 0.165705,
+    "sim_effect_relative": 0.101845,
+    "aa": {
+      "false_positive_raw": 0.056,
+      "false_positive_cuped": 0.05175
+    },
+    "injection": {
+      "power_raw": 0.572,
+      "power_cuped": 0.808,
+      "true_effect": 0.165512,
+      "mean_estimate_raw": 0.167781,
+      "mean_estimate_cuped": 0.16736,
+      "sd_estimate_raw": 0.078499,
+      "sd_estimate_cuped": 0.057764
+    },
+    "peeking": {
+      "false_positive_peeking": 0.1535,
+      "false_positive_fixed": 0.047,
+      "median_first_false_alarm_day": 3.0
+    },
+    "srm_example_p_50_50": 1.0,
+    "srm_example_p_50_5": 0.317311,
+    "srm_example_p_52": 6.3e-05,
+    "secondary_retained_rate": 0.240274,
+    "secondary_n_per_arm_2pts": 7363,
+    "guardrail_minutes_per_active_day_median": 20.183333
+  },
+  "sizing": {
+    "points": 1.0,
+    "new_avatars_per_day": 58.410714,
+    "d30_retention": 0.180872,
+    "extra_dau_at_horizon": 14.696287,
+    "extra_dau_avg_over_horizon": 7.201233,
+    "extra_player_days_over_horizon": 1317.825616,
+    "baseline_dau": 1939.389912,
+    "baseline_source": "average DAU of the last 56 days",
+    "extra_dau_share_at_horizon": 0.007578
+  }
+}
